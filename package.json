@@ -1,0 +1,18 @@
+{
+  "name": "planetary-speed-solver",
+  "version": "1.0.0",
+  "private": true,
+  "description": "行星排共享轴角速度联立求解后端（教学用理想模型）",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/solve.test.js",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
+
